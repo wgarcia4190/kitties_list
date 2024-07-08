@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3816D45D2C3C0F3F0019725B /* KittyListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D45C2C3C0F3F0019725B /* KittyListApp.swift */; };
+		3816D45F2C3C0F3F0019725B /* KittiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D45E2C3C0F3F0019725B /* KittiesListView.swift */; };
+		3816D4612C3C0F3F0019725B /* CatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4602C3C0F3F0019725B /* CatItem.swift */; };
+		3816D4632C3C0F410019725B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3816D4622C3C0F410019725B /* Assets.xcassets */; };
+		3816D4672C3C0F410019725B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3816D4662C3C0F410019725B /* Preview Assets.xcassets */; };
+		3816D4712C3C0F410019725B /* KittyListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4702C3C0F410019725B /* KittyListTests.swift */; };
+		3816D47B2C3C0F410019725B /* KittyListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D47A2C3C0F410019725B /* KittyListUITests.swift */; };
+		3816D47D2C3C0F410019725B /* KittyListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D47C2C3C0F410019725B /* KittyListUITestsLaunchTests.swift */; };
+		3816D4902C3C11530019725B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D48F2C3C11530019725B /* Constants.swift */; };
+		3816D4962C3C130E0019725B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3816D4952C3C130E0019725B /* Alamofire */; };
+		3816D4982C3C13280019725B /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4972C3C13280019725B /* BaseAPI.swift */; };
+		3816D49A2C3C13550019725B /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4992C3C13550019725B /* APIRouter.swift */; };
+		3816D49C2C3C138E0019725B /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D49B2C3C138E0019725B /* NetworkLogger.swift */; };
+		3816D49E2C3C13F20019725B /* CatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D49D2C3C13F20019725B /* CatAPI.swift */; };
+		3816D4A02C3C14290019725B /* CatAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D49F2C3C14290019725B /* CatAPIRouter.swift */; };
+		3816D4A22C3C14490019725B /* CatAPIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4A12C3C14490019725B /* CatAPIInterface.swift */; };
+		3816D4A52C3C14740019725B /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4A42C3C14740019725B /* BaseError.swift */; };
+		3816D4A72C3C148E0019725B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4A62C3C148D0019725B /* APIError.swift */; };
+		3816D4A92C3C14F00019725B /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4A82C3C14F00019725B /* CatModel.swift */; };
+		3816D4AC2C3C1BA40019725B /* KittyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4AB2C3C1BA40019725B /* KittyCard.swift */; };
+		3816D4AF2C3C1DC90019725B /* KittyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4AE2C3C1DC90019725B /* KittyViewModel.swift */; };
+		3816D4B12C3C242D0019725B /* KittyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4B02C3C242D0019725B /* KittyDetailsView.swift */; };
+		3816D4B52C3C39530019725B /* KittyViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4B42C3C39530019725B /* KittyViewModelTest.swift */; };
+		3816D4B92C3C398E0019725B /* CatAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4B82C3C398E0019725B /* CatAPIMock.swift */; };
+		3816D4BB2C3C39FB0019725B /* BaseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4BA2C3C39FB0019725B /* BaseAlert.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3816D46D2C3C0F410019725B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3816D4512C3C0F3F0019725B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3816D4582C3C0F3F0019725B;
+			remoteInfo = KittyList;
+		};
+		3816D4772C3C0F410019725B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3816D4512C3C0F3F0019725B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3816D4582C3C0F3F0019725B;
+			remoteInfo = KittyList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3816D4592C3C0F3F0019725B /* KittyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KittyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3816D45C2C3C0F3F0019725B /* KittyListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyListApp.swift; sourceTree = "<group>"; };
+		3816D45E2C3C0F3F0019725B /* KittiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittiesListView.swift; sourceTree = "<group>"; };
+		3816D4602C3C0F3F0019725B /* CatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatItem.swift; sourceTree = "<group>"; };
+		3816D4622C3C0F410019725B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3816D4642C3C0F410019725B /* KittyList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KittyList.entitlements; sourceTree = "<group>"; };
+		3816D4662C3C0F410019725B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3816D46C2C3C0F410019725B /* KittyListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittyListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3816D4702C3C0F410019725B /* KittyListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyListTests.swift; sourceTree = "<group>"; };
+		3816D4762C3C0F410019725B /* KittyListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittyListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3816D47A2C3C0F410019725B /* KittyListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyListUITests.swift; sourceTree = "<group>"; };
+		3816D47C2C3C0F410019725B /* KittyListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3816D48F2C3C11530019725B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3816D4972C3C13280019725B /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		3816D4992C3C13550019725B /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		3816D49B2C3C138E0019725B /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		3816D49D2C3C13F20019725B /* CatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPI.swift; sourceTree = "<group>"; };
+		3816D49F2C3C14290019725B /* CatAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIRouter.swift; sourceTree = "<group>"; };
+		3816D4A12C3C14490019725B /* CatAPIInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIInterface.swift; sourceTree = "<group>"; };
+		3816D4A42C3C14740019725B /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		3816D4A62C3C148D0019725B /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3816D4A82C3C14F00019725B /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
+		3816D4AB2C3C1BA40019725B /* KittyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyCard.swift; sourceTree = "<group>"; };
+		3816D4AE2C3C1DC90019725B /* KittyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyViewModel.swift; sourceTree = "<group>"; };
+		3816D4B02C3C242D0019725B /* KittyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyDetailsView.swift; sourceTree = "<group>"; };
+		3816D4B42C3C39530019725B /* KittyViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyViewModelTest.swift; sourceTree = "<group>"; };
+		3816D4B82C3C398E0019725B /* CatAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIMock.swift; sourceTree = "<group>"; };
+		3816D4BA2C3C39FB0019725B /* BaseAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAlert.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3816D4562C3C0F3F0019725B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816D4962C3C130E0019725B /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816D4692C3C0F410019725B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816D4732C3C0F410019725B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3816D4502C3C0F3F0019725B = {
+			isa = PBXGroup;
+			children = (
+				3816D45B2C3C0F3F0019725B /* KittyList */,
+				3816D46F2C3C0F410019725B /* KittyListTests */,
+				3816D4792C3C0F410019725B /* KittyListUITests */,
+				3816D45A2C3C0F3F0019725B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3816D45A2C3C0F3F0019725B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4592C3C0F3F0019725B /* KittyList.app */,
+				3816D46C2C3C0F410019725B /* KittyListTests.xctest */,
+				3816D4762C3C0F410019725B /* KittyListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3816D45B2C3C0F3F0019725B /* KittyList */ = {
+			isa = PBXGroup;
+			children = (
+				3816D48C2C3C10EF0019725B /* Utils */,
+				3816D48B2C3C10E20019725B /* Views */,
+				3816D48A2C3C10D20019725B /* Domain */,
+				3816D4892C3C10CA0019725B /* Data */,
+				3816D4622C3C0F410019725B /* Assets.xcassets */,
+				3816D4642C3C0F410019725B /* KittyList.entitlements */,
+				3816D4652C3C0F410019725B /* Preview Content */,
+			);
+			path = KittyList;
+			sourceTree = "<group>";
+		};
+		3816D4652C3C0F410019725B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4662C3C0F410019725B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3816D46F2C3C0F410019725B /* KittyListTests */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4B62C3C39730019725B /* Data */,
+				3816D4B22C3C393C0019725B /* Domain */,
+				3816D4702C3C0F410019725B /* KittyListTests.swift */,
+			);
+			path = KittyListTests;
+			sourceTree = "<group>";
+		};
+		3816D4792C3C0F410019725B /* KittyListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3816D47A2C3C0F410019725B /* KittyListUITests.swift */,
+				3816D47C2C3C0F410019725B /* KittyListUITestsLaunchTests.swift */,
+			);
+			path = KittyListUITests;
+			sourceTree = "<group>";
+		};
+		3816D4892C3C10CA0019725B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4912C3C11A30019725B /* Networking */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3816D48A2C3C10D20019725B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4AD2C3C1DBD0019725B /* ViewModels */,
+				3816D4A32C3C146A0019725B /* Errors */,
+				3816D48E2C3C11220019725B /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3816D48B2C3C10E20019725B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4AA2C3C1B950019725B /* UI */,
+				3816D48D2C3C11120019725B /* Screens */,
+				3816D45C2C3C0F3F0019725B /* KittyListApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3816D48C2C3C10EF0019725B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3816D48F2C3C11530019725B /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3816D48D2C3C11120019725B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3816D45E2C3C0F3F0019725B /* KittiesListView.swift */,
+				3816D4B02C3C242D0019725B /* KittyDetailsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3816D48E2C3C11220019725B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4602C3C0F3F0019725B /* CatItem.swift */,
+				3816D4A82C3C14F00019725B /* CatModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3816D4912C3C11A30019725B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4932C3C11B10019725B /* Cat */,
+				3816D4922C3C11AD0019725B /* Base */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		3816D4922C3C11AD0019725B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4972C3C13280019725B /* BaseAPI.swift */,
+				3816D4992C3C13550019725B /* APIRouter.swift */,
+				3816D49B2C3C138E0019725B /* NetworkLogger.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3816D4932C3C11B10019725B /* Cat */ = {
+			isa = PBXGroup;
+			children = (
+				3816D49D2C3C13F20019725B /* CatAPI.swift */,
+				3816D49F2C3C14290019725B /* CatAPIRouter.swift */,
+				3816D4A12C3C14490019725B /* CatAPIInterface.swift */,
+			);
+			path = Cat;
+			sourceTree = "<group>";
+		};
+		3816D4A32C3C146A0019725B /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4A42C3C14740019725B /* BaseError.swift */,
+				3816D4A62C3C148D0019725B /* APIError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		3816D4AA2C3C1B950019725B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4AB2C3C1BA40019725B /* KittyCard.swift */,
+				3816D4BA2C3C39FB0019725B /* BaseAlert.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3816D4AD2C3C1DBD0019725B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4AE2C3C1DC90019725B /* KittyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3816D4B22C3C393C0019725B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4B32C3C39430019725B /* ViewModels */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3816D4B32C3C39430019725B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4B42C3C39530019725B /* KittyViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3816D4B62C3C39730019725B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4B72C3C39770019725B /* Networking */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3816D4B72C3C39770019725B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4B82C3C398E0019725B /* CatAPIMock.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3816D4582C3C0F3F0019725B /* KittyList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3816D4802C3C0F410019725B /* Build configuration list for PBXNativeTarget "KittyList" */;
+			buildPhases = (
+				3816D4552C3C0F3F0019725B /* Sources */,
+				3816D4562C3C0F3F0019725B /* Frameworks */,
+				3816D4572C3C0F3F0019725B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KittyList;
+			packageProductDependencies = (
+				3816D4952C3C130E0019725B /* Alamofire */,
+			);
+			productName = KittyList;
+			productReference = 3816D4592C3C0F3F0019725B /* KittyList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3816D46B2C3C0F410019725B /* KittyListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3816D4832C3C0F410019725B /* Build configuration list for PBXNativeTarget "KittyListTests" */;
+			buildPhases = (
+				3816D4682C3C0F410019725B /* Sources */,
+				3816D4692C3C0F410019725B /* Frameworks */,
+				3816D46A2C3C0F410019725B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3816D46E2C3C0F410019725B /* PBXTargetDependency */,
+			);
+			name = KittyListTests;
+			productName = KittyListTests;
+			productReference = 3816D46C2C3C0F410019725B /* KittyListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3816D4752C3C0F410019725B /* KittyListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3816D4862C3C0F410019725B /* Build configuration list for PBXNativeTarget "KittyListUITests" */;
+			buildPhases = (
+				3816D4722C3C0F410019725B /* Sources */,
+				3816D4732C3C0F410019725B /* Frameworks */,
+				3816D4742C3C0F410019725B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3816D4782C3C0F410019725B /* PBXTargetDependency */,
+			);
+			name = KittyListUITests;
+			productName = KittyListUITests;
+			productReference = 3816D4762C3C0F410019725B /* KittyListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3816D4512C3C0F3F0019725B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3816D4582C3C0F3F0019725B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3816D46B2C3C0F410019725B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3816D4582C3C0F3F0019725B;
+					};
+					3816D4752C3C0F410019725B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3816D4582C3C0F3F0019725B;
+					};
+				};
+			};
+			buildConfigurationList = 3816D4542C3C0F3F0019725B /* Build configuration list for PBXProject "KittyList" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3816D4502C3C0F3F0019725B;
+			packageReferences = (
+				3816D4942C3C130E0019725B /* XCRemoteSwiftPackageReference "AlamoFire" */,
+			);
+			productRefGroup = 3816D45A2C3C0F3F0019725B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3816D4582C3C0F3F0019725B /* KittyList */,
+				3816D46B2C3C0F410019725B /* KittyListTests */,
+				3816D4752C3C0F410019725B /* KittyListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3816D4572C3C0F3F0019725B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816D4672C3C0F410019725B /* Preview Assets.xcassets in Resources */,
+				3816D4632C3C0F410019725B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816D46A2C3C0F410019725B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816D4742C3C0F410019725B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3816D4552C3C0F3F0019725B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816D49C2C3C138E0019725B /* NetworkLogger.swift in Sources */,
+				3816D4AF2C3C1DC90019725B /* KittyViewModel.swift in Sources */,
+				3816D4A92C3C14F00019725B /* CatModel.swift in Sources */,
+				3816D4BB2C3C39FB0019725B /* BaseAlert.swift in Sources */,
+				3816D49E2C3C13F20019725B /* CatAPI.swift in Sources */,
+				3816D4A02C3C14290019725B /* CatAPIRouter.swift in Sources */,
+				3816D45F2C3C0F3F0019725B /* KittiesListView.swift in Sources */,
+				3816D49A2C3C13550019725B /* APIRouter.swift in Sources */,
+				3816D4B12C3C242D0019725B /* KittyDetailsView.swift in Sources */,
+				3816D4A72C3C148E0019725B /* APIError.swift in Sources */,
+				3816D4612C3C0F3F0019725B /* CatItem.swift in Sources */,
+				3816D45D2C3C0F3F0019725B /* KittyListApp.swift in Sources */,
+				3816D4902C3C11530019725B /* Constants.swift in Sources */,
+				3816D4A52C3C14740019725B /* BaseError.swift in Sources */,
+				3816D4AC2C3C1BA40019725B /* KittyCard.swift in Sources */,
+				3816D4982C3C13280019725B /* BaseAPI.swift in Sources */,
+				3816D4A22C3C14490019725B /* CatAPIInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816D4682C3C0F410019725B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816D4B92C3C398E0019725B /* CatAPIMock.swift in Sources */,
+				3816D4B52C3C39530019725B /* KittyViewModelTest.swift in Sources */,
+				3816D4712C3C0F410019725B /* KittyListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3816D4722C3C0F410019725B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3816D47D2C3C0F410019725B /* KittyListUITestsLaunchTests.swift in Sources */,
+				3816D47B2C3C0F410019725B /* KittyListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3816D46E2C3C0F410019725B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3816D4582C3C0F3F0019725B /* KittyList */;
+			targetProxy = 3816D46D2C3C0F410019725B /* PBXContainerItemProxy */;
+		};
+		3816D4782C3C0F410019725B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3816D4582C3C0F3F0019725B /* KittyList */;
+			targetProxy = 3816D4772C3C0F410019725B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3816D47E2C3C0F410019725B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3816D47F2C3C0F410019725B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3816D4812C3C0F410019725B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KittyList/KittyList.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KittyList/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.softcube.KittyList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3816D4822C3C0F410019725B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KittyList/KittyList.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KittyList/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.softcube.KittyList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3816D4842C3C0F410019725B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.softcube.KittyListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KittyList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KittyList";
+			};
+			name = Debug;
+		};
+		3816D4852C3C0F410019725B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.softcube.KittyListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KittyList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KittyList";
+			};
+			name = Release;
+		};
+		3816D4872C3C0F410019725B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.softcube.KittyListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KittyList;
+			};
+			name = Debug;
+		};
+		3816D4882C3C0F410019725B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.softcube.KittyListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KittyList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3816D4542C3C0F3F0019725B /* Build configuration list for PBXProject "KittyList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3816D47E2C3C0F410019725B /* Debug */,
+				3816D47F2C3C0F410019725B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3816D4802C3C0F410019725B /* Build configuration list for PBXNativeTarget "KittyList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3816D4812C3C0F410019725B /* Debug */,
+				3816D4822C3C0F410019725B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3816D4832C3C0F410019725B /* Build configuration list for PBXNativeTarget "KittyListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3816D4842C3C0F410019725B /* Debug */,
+				3816D4852C3C0F410019725B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3816D4862C3C0F410019725B /* Build configuration list for PBXNativeTarget "KittyListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3816D4872C3C0F410019725B /* Debug */,
+				3816D4882C3C0F410019725B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3816D4942C3C130E0019725B /* XCRemoteSwiftPackageReference "AlamoFire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamoFire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3816D4952C3C130E0019725B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3816D4942C3C130E0019725B /* XCRemoteSwiftPackageReference "AlamoFire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3816D4512C3C0F3F0019725B /* Project object */;
+}
