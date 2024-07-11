@@ -1,0 +1,38 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "Add Item" : {
+
+    },
+    "Favorites" : {
+      "extractionState" : "manual"
+    },
+    "Kitties" : {
+
+    },
+    "kitty_info" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kitty's Information"
+          }
+        }
+      }
+    },
+    "Kitty's Information" : {
+
+    },
+    "Ok" : {
+
+    },
+    "Tags: %@" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -7,3 +7,8 @@ struct Constants {
         }
     }
 }
+
+enum KittiesSelection: String, CaseIterable {
+    case list = "Kitties"
+    case favorites = "Favorites"
+}

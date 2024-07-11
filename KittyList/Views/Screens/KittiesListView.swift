@@ -2,14 +2,14 @@ import SwiftUI
 import SwiftData
 
 struct KittiesListView: View {
-    @State private var selectedOption = "Kitties"
+    @State private var selectedOption = KittiesSelection.list.rawValue
     @State var skip: Int = 0
     
     @StateObject var viewModel = KittyViewModel()
     @Query private var savedKitties: [CatItem]
     
     var limit: Int = 50
-    var options = ["Kitties", "Favorites"]
+    var options = KittiesSelection.allCases.map { $0.rawValue }
     
     var body: some View {
         NavigationView {
@@ -34,9 +34,13 @@ struct KittiesListView: View {
                 Spacer()
                 
                 switch selectedOption {
-                case "Kitties":
-                    renderKittiesList()
-                case "Favorites":
+                case KittiesSelection.list.rawValue:
+                    if viewModel.isLoading && viewModel.cats.isEmpty {
+                        ProgressView()
+                    } else {
+                        renderKittiesList()
+                    }
+                case KittiesSelection.favorites.rawValue:
                     renderFavoritesList()
                 default:
                     EmptyView()
@@ -56,6 +60,10 @@ struct KittiesListView: View {
         ScrollView {
             ForEach(viewModel.cats, id: \.id) { cat in
                 KittyCard(model: cat)
+            }
+            
+            if viewModel.isLoading {
+                ProgressView()
             }
         }
     }

@@ -32,6 +32,8 @@
 		3816D4B52C3C39530019725B /* KittyViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4B42C3C39530019725B /* KittyViewModelTest.swift */; };
 		3816D4B92C3C398E0019725B /* CatAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4B82C3C398E0019725B /* CatAPIMock.swift */; };
 		3816D4BB2C3C39FB0019725B /* BaseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3816D4BA2C3C39FB0019725B /* BaseAlert.swift */; };
+		3850CA232C3F9BB600F10E12 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3850CA222C3F9BB600F10E12 /* Localizable.xcstrings */; };
+		3850CA2B2C3F9FE100F10E12 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3850CA2A2C3F9FE100F10E12 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,7 @@
 		3816D4B42C3C39530019725B /* KittyViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittyViewModelTest.swift; sourceTree = "<group>"; };
 		3816D4B82C3C398E0019725B /* CatAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPIMock.swift; sourceTree = "<group>"; };
 		3816D4BA2C3C39FB0019725B /* BaseAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAlert.swift; sourceTree = "<group>"; };
+		3850CA222C3F9BB600F10E12 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3850CA2B2C3F9FE100F10E12 /* Kingfisher in Frameworks */,
 				3816D4962C3C130E0019725B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,11 +135,11 @@
 		3816D45B2C3C0F3F0019725B /* KittyList */ = {
 			isa = PBXGroup;
 			children = (
+				3850CA212C3F9BA000F10E12 /* Resources */,
 				3816D48C2C3C10EF0019725B /* Utils */,
 				3816D48B2C3C10E20019725B /* Views */,
 				3816D48A2C3C10D20019725B /* Domain */,
 				3816D4892C3C10CA0019725B /* Data */,
-				3816D4622C3C0F410019725B /* Assets.xcassets */,
 				3816D4642C3C0F410019725B /* KittyList.entitlements */,
 				3816D4652C3C0F410019725B /* Preview Content */,
 			);
@@ -310,6 +314,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		3850CA212C3F9BA000F10E12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3816D4622C3C0F410019725B /* Assets.xcassets */,
+				3850CA222C3F9BB600F10E12 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,6 +341,7 @@
 			name = KittyList;
 			packageProductDependencies = (
 				3816D4952C3C130E0019725B /* Alamofire */,
+				3850CA2A2C3F9FE100F10E12 /* Kingfisher */,
 			);
 			productName = KittyList;
 			productReference = 3816D4592C3C0F3F0019725B /* KittyList.app */;
@@ -403,6 +417,7 @@
 			mainGroup = 3816D4502C3C0F3F0019725B;
 			packageReferences = (
 				3816D4942C3C130E0019725B /* XCRemoteSwiftPackageReference "AlamoFire" */,
+				3850CA292C3F9FE100F10E12 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 3816D45A2C3C0F3F0019725B /* Products */;
 			projectDirPath = "";
@@ -422,6 +437,7 @@
 			files = (
 				3816D4672C3C0F410019725B /* Preview Assets.xcassets in Resources */,
 				3816D4632C3C0F410019725B /* Assets.xcassets in Resources */,
+				3850CA232C3F9BB600F10E12 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +839,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		3850CA292C3F9FE100F10E12 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -830,6 +854,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3816D4942C3C130E0019725B /* XCRemoteSwiftPackageReference "AlamoFire" */;
 			productName = Alamofire;
+		};
+		3850CA2A2C3F9FE100F10E12 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3850CA292C3F9FE100F10E12 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

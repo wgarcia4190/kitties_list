@@ -1,4 +1,5 @@
 import Foundation
+import Kingfisher
 import SwiftUI
 
 struct KittyCard: View {
@@ -16,12 +17,15 @@ struct KittyCard: View {
                 alignment: .leading,
                 spacing: .zero
             ) {
-                AsyncImage(
-                    url: model.getImageUrl(
-                        width: 320,
-                        height: 200
-                    )
-                )
+                
+                KFImage.url(model.getImageUrl(
+                    width: 320,
+                    height: 200
+                ))
+                .placeholder {
+                    ProgressView()
+                }
+                .cacheMemoryOnly()
                 .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                 .clipped()
                 .frame(width: 320, height: 200)
@@ -31,7 +35,7 @@ struct KittyCard: View {
                     spacing: 2
                 ) {
                     Text(
-                        "Kitty's Information"
+                        "kitty_info"
                     )
                     .font(.system(size: 14, weight: .bold))
                     .foregroundColor(.black)
